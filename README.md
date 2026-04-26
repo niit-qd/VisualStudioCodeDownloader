@@ -47,9 +47,9 @@ Visual Studio Code Downloader
     注意：需要提前安装`jq`命令，并配置到`PATH`中。
 2. bat with powershell
     ``` bat
-    @REM version=latest
-    version=1.117.0
-    download.bat
+    @REM set version=latest
+    set version=1.117.0
+    download.bat %version%
     ```
 
 ---
