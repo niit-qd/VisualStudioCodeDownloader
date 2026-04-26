@@ -52,3 +52,8 @@ Visual Studio Code Downloader
     download.bat
     ```
 
+---
+
+### 其他
+
+有点懒，本脚本主代码片段来源于[豆包](https://www.doubao.com/chat)。^_^
