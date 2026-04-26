@@ -75,15 +75,19 @@ for ((i=0; i<length; i++)); do
 
     # 如果服务器没有返回文件名，才报错退出（不使用URL文件名）
     if [ -z "$filename" ]; then
-        echo "❌ 服务器未返回文件名，无法下载"
-        continue
+        echo "❌ 服务器未返回文件名"
+        filename=$(basename "$url")
+        echo "📄 文件名：${filename} ⚠️ 来源：从URL中自动提取"
+    else
+        echo "📄 文件名：${filename} ✅ 来源：服务器返回的文件名"
     fi
 
     # 最终保存路径（绝对正确）
     save_path="${target_dir}/${filename}"
 
     # 下载
-    curl -s -L -o "$save_path" "$final_url"
+    # curl -s -L -o "$save_path" "$final_url"
+    curl --progress-bar -L -o "$save_path" "$final_url"
 
     if [ $? -eq 0 ]; then
         echo "✅ 下载完成：$save_path"
