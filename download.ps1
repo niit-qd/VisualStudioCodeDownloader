@@ -9,7 +9,7 @@
 # ====================== 【请在这里配置】 ======================
 $jsonFilePath = "data.json"                             # JSON文件路径
 $version = if ($args[0]) { $args[0] } else { "latest" } # 你要替换的版本号（可随意修改）
-$downloadRoot = "../$version"                 # 下载根目录
+$downloadRoot = "../$version"                           # 下载根目录
 Write-Host "jsonFilePath    : $jsonFilePath"
 Write-Host "version         : $version"
 Write-Host "downloadRoot    : $downloadRoot"

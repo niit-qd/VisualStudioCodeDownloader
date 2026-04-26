@@ -8,10 +8,6 @@ set "version=%~1"
 echo version = %version%
 if "%version%"=="" (
     powershell -ExecutionPolicy Bypass -File "download.ps1"
-    echo 111
-    pause
 ) else (
-    echo version = %version%
-    pause
     powershell -ExecutionPolicy Bypass -File "download.ps1" %version%
 )
