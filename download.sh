@@ -39,6 +39,8 @@ echo -e "\n===== 开始下载（版本：$VERSION）=====\n"
 
 length=$(jq '. | length' "$JSON_FILE")
 for ((i=0; i<length; i++)); do
+    echo "----------------------------------------------------------------------------------------------------"
+
     # 读取字段
     download_type=$(jq -r ".[$i].\"Download type\"" "$JSON_FILE")
     raw_url=$(jq -r ".[$i].URL" "$JSON_FILE")
@@ -55,7 +57,8 @@ for ((i=0; i<length; i++)); do
     target_dir="$DOWNLOAD_ROOT/$download_type"
     mkdir -p "$target_dir"
 
-    echo -e "\n📁 目录：$target_dir"
+    echo -e "📁 目录：$target_dir"
+    echo "🔗 原始URL：$raw_url"
     echo "🔗 最终URL：$final_url"
     echo "🔽 获取文件名并下载中..."
 
@@ -94,6 +97,7 @@ for ((i=0; i<length; i++)); do
     else
         echo "❌ 下载失败"
     fi
+    echo ""
 done
 
 echo -e "\n===== 全部任务完成 =====\n"

@@ -33,6 +33,8 @@ Write-Host "`n===== 开始批量下载（版本号：$version）=====`n" -ForegroundColor Gr
 
 # 遍历每个下载项
 foreach ($item in $dataArray) {
+    Write-Host "----------------------------------------------------------------------------------------------------"
+
     # 读取字段
     $folderName = $item.'Download type'
     $rawUrl = $item.URL
@@ -84,13 +86,16 @@ foreach ($item in $dataArray) {
         $savePath = Join-Path $targetFolder $fileName
 
         # 下载文件
-        Invoke-WebRequest -Uri $finalUrl -OutFile $savePath -UseBasicParsing
+        # Invoke-WebRequest -Uri $finalUrl -OutFile $savePath -UseBasicParsing
+        # PowerShell 里的 curl 是别名，指向 Invoke-WebRequest（慢！）
+        curl.exe --progress-bar -L -o "$savePath" "$finalUrl"
 
         Write-Host "? 下载完成：$savePath" -ForegroundColor Green
     }
     catch {
         Write-Error "? 下载失败：$_"
     }
+    Write-Host
 }
 
 Write-Host "`n===== 全部任务处理完毕 =====`n" -ForegroundColor Green
