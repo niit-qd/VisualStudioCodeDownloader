@@ -40,6 +40,10 @@ Visual Studio Code Downloader
 
 1. shell
     ``` shell
+    # 默认参数：latest
+    ./download.sh
+
+    # 或带参数
     # version=latest
     version=1.117.0
     ./download.sh $version
@@ -47,6 +51,10 @@ Visual Studio Code Downloader
     注意：需要提前安装`jq`命令，并配置到`PATH`中。
 2. bat with powershell
     ``` bat
+    @REM 默认参数：latest
+    download.bat
+
+    @REM 或带参数
     @REM set version=latest
     set version=1.117.0
     download.bat %version%
