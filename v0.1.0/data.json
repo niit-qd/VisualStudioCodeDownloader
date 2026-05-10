@@ -1,0 +1,106 @@
+[
+    {
+        "Download type": "Windows x64 System installer",
+        "URL": "https://update.code.visualstudio.com/{version}/win32-x64/stable"
+    },
+    {
+        "Download type": "Windows x64 User installer",
+        "URL": "https://update.code.visualstudio.com/{version}/win32-x64-user/stable"
+    },
+    {
+        "Download type": "Windows x64 zip",
+        "URL": "https://update.code.visualstudio.com/{version}/win32-x64-archive/stable"
+    },
+    {
+        "Download type": "Windows x64 CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-win32-x64/stable"
+    },
+    {
+        "Download type": "Windows Arm64 System installer",
+        "URL": "https://update.code.visualstudio.com/{version}/win32-arm64/stable"
+    },
+    {
+        "Download type": "Windows Arm64 User installer",
+        "URL": "https://update.code.visualstudio.com/{version}/win32-arm64-user/stable"
+    },
+    {
+        "Download type": "Windows Arm64 zip",
+        "URL": "https://update.code.visualstudio.com/{version}/win32-arm64-archive/stable"
+    },
+    {
+        "Download type": "Windows Arm64 CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-win32-arm64/stable"
+    },
+    {
+        "Download type": "macOS Universal",
+        "URL": "https://update.code.visualstudio.com/{version}/darwin-universal/stable"
+    },
+    {
+        "Download type": "macOS Intel chip",
+        "URL": "https://update.code.visualstudio.com/{version}/darwin/stable"
+    },
+    {
+        "Download type": "macOS Intel chip CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-darwin-x64/stable"
+    },
+    {
+        "Download type": "macOS Apple silicon",
+        "URL": "https://update.code.visualstudio.com/{version}/darwin-arm64/stable"
+    },
+    {
+        "Download type": "macOS Apple silicon CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-darwin-arm64/stable"
+    },
+    {
+        "Download type": "Linux x64",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-x64/stable"
+    },
+    {
+        "Download type": "Linux x64 debian",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-deb-x64/stable"
+    },
+    {
+        "Download type": "Linux x64 rpm",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-rpm-x64/stable"
+    },
+    {
+        "Download type": "Linux x64 snap",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-snap-x64/stable"
+    },
+    {
+        "Download type": "Linux x64 CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-linux-x64/stable"
+    },
+    {
+        "Download type": "Linux Arm32",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-armhf/stable"
+    },
+    {
+        "Download type": "Linux Arm32 debian",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-deb-armhf/stable"
+    },
+    {
+        "Download type": "Linux Arm32 rpm",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-rpm-armhf/stable"
+    },
+    {
+        "Download type": "Linux Arm32 CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-linux-armhf/stable"
+    },
+    {
+        "Download type": "Linux Arm64",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-arm64/stable"
+    },
+    {
+        "Download type": "Linux Arm64 debian",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-deb-arm64/stable"
+    },
+    {
+        "Download type": "Linux Arm64 rpm",
+        "URL": "https://update.code.visualstudio.com/{version}/linux-rpm-arm64/stable"
+    },
+    {
+        "Download type": "Linux Arm64 CLI",
+        "URL": "https://update.code.visualstudio.com/{version}/cli-linux-arm64/stable"
+    }
+]
